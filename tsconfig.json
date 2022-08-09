@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "sourceRoot": "./src",
+    "sourceMap": true,
+    "target": "ES6",
+    "charset": "utf8",
+    "alwaysStrict": true,
+    "declaration": true,
+    "declarationMap": true,
+    "skipLibCheck": true,
+    "moduleResolution": "Node",
+    "outDir": "./dist",
+    "pretty": true,
+    "rootDir": "./src",
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "paths": {
+      "@root/*": ["./src/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules/**/*"]
+}
