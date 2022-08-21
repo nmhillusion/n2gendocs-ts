@@ -1,7 +1,7 @@
 import { TsExportModel } from "@nmhillusion/n2mix/dist/javascript/modules/parser/typescript";
-import { obtainTemplateMod } from "../modules/obtainTemplate.mod";
-import { resolveVariablesTemplate } from "../modules/resolveVariableTemplate.mod";
-import { TemplateType } from "../modules/Template.type";
+import { obtainTemplateMod } from "@root/modules/obtainTemplate.mod";
+import { resolveVariablesTemplate } from "@root/modules/resolveVariableTemplate.mod";
+import { TemplateType } from "@root/modules/Template.type";
 import { commentGenerateDocs } from "./comment.gen";
 
 export function exportGenerateDocs(exportNode: TsExportModel): string {

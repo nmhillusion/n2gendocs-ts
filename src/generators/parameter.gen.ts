@@ -1,12 +1,15 @@
 import {
-  TsParamModel, TsPropertyModel,
+  TsParamModel,
+  TsPropertyModel,
 } from "@nmhillusion/n2mix/dist/javascript/modules/parser/typescript";
-import { resolveVariablesTemplate } from "../modules/resolveVariableTemplate.mod";
-import { obtainTemplateMod } from "../modules/obtainTemplate.mod";
-import { TemplateType } from "../modules/Template.type";
+import { resolveVariablesTemplate } from "@root/modules/resolveVariableTemplate.mod";
+import { obtainTemplateMod } from "@root/modules/obtainTemplate.mod";
+import { TemplateType } from "@root/modules/Template.type";
 import { commentGenerateDocs } from "./comment.gen";
 
-export function parameterPropertyGenerateDocs(propNode: TsParamModel | TsPropertyModel) {
+export function parameterPropertyGenerateDocs(
+  propNode: TsParamModel | TsPropertyModel
+) {
   const templateContent = obtainTemplateMod(TemplateType.PROPERTY_TEMPLATE);
 
   const propertyName: string = propNode.name;
