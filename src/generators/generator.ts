@@ -2,6 +2,7 @@ import {
   TsFileModel,
   TsParser,
 } from "@nmhillusion/n2mix/dist/javascript/modules/parser/typescript";
+import { Constant } from "@root/modules/Contant.enum";
 import { PathLike } from "fs";
 import { classGenerateDocs } from "./classs.gen";
 import { exportGenerateDocs } from "./export.gen";
@@ -44,6 +45,8 @@ export class DocsGenerator {
       }
     }
 
-    return docsPart.join("\n\n---\n\n");
+    return docsPart.join(
+      Constant.SEPERATE_MEMBER + "\n\n---\n\n" + Constant.SEPERATE_MEMBER
+    );
   }
 }
