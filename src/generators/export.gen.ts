@@ -18,7 +18,7 @@ export function exportGenerateDocs(exportNode: TsExportModel): string {
     },
     {
       varName: "commentsOfExport",
-      varValue: commentGenerateDocs(exportNode.comments).content,
+      varValue: `    ${commentGenerateDocs(exportNode.comments).content}`,
     },
   ]);
 

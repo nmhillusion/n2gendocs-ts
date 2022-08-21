@@ -1,10 +1,10 @@
-# Function: `adder`
+# Function: `adder(init: number)`
 
-adder for number to adding from a constant number
+    adder for number to adding from a constant number
 
 ### Parameter List:
 
-- **init**: `number` -- initial for adder 
+- **init**: `number` -- initial for adder
 
 
 ### Return Type: `(x: number) => number` --- adder after init with a number

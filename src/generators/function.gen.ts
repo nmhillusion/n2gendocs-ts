@@ -1,4 +1,7 @@
-import { TsFunctionModel } from "@nmhillusion/n2mix/dist/javascript/modules/parser/typescript";
+import {
+  TsFunctionModel,
+  TsParamModel,
+} from "@nmhillusion/n2mix/dist/javascript/modules/parser/typescript";
 import { resolveVariablesTemplate } from "@root/modules/resolveVariableTemplate.mod";
 import { obtainTemplateMod } from "@root/modules/obtainTemplate.mod";
 import { TemplateType } from "@root/modules/Template.type";
@@ -24,7 +27,11 @@ export function functionGenerateDocs(
   injectCommentForParamList(funcNode, paramsComment);
 
   const renderedContent = resolveVariablesTemplate(templateContent, [
-    { varName: "functionName", varValue: funcNode.functionName },
+    {
+      varName: "functionName",
+      varValue:
+        funcNode.functionName + generateParameterList(funcNode.paramList),
+    },
     {
       varName: "commentsOfFunction",
       varValue: `    ${commentContent}`,
@@ -59,4 +66,18 @@ function injectCommentForParamList(
       });
     }
   }
+}
+
+function generateParameterList(paramList: TsParamModel[]) {
+  const paramDocsList = [];
+
+  for (const param of paramList) {
+    const paramDocs = `${param.name}${param.optional ? "?" : ""}: ${
+      param.type ? param.type : "any"
+    }`;
+
+    paramDocsList.push(paramDocs);
+  }
+
+  return `(${paramDocsList.join(", ")})`;
 }

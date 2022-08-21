@@ -16,7 +16,7 @@ export function classGenerateDocs(classNode: TsClassModel): string {
     },
     {
       varName: "commentsOfClass",
-      varValue: commentGenerateDocs(classNode.comments).content,
+      varValue: `    ${commentGenerateDocs(classNode.comments).content}`,
     },
     {
       varName: "propertyListContent",

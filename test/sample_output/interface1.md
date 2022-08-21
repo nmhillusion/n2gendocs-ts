@@ -1,6 +1,6 @@
 # Interface / Type: `Funniable`
 
-How to define a funniable class
+    How to define a funniable class
 
 ## Property List
 
@@ -8,39 +8,43 @@ How to define a funniable class
 
 ## Method List
 
-### Function: `talk`
+### Function: `talk(message: string)`
 
-posibility to talk
+    posibility to talk
 
 #### Parameter List:
 
-- **message**: `string` -- to talk 
+- **message**: `string` -- to talk
 
 
 #### Return Type: `void` 
+<br/>
 
----
-### Function: `eat`
+<br/>
 
-posibility to eat
+### Function: `eat(food: string, drink: string)`
+
+    posibility to eat
 
 #### Parameter List:
 
-- **food**: `string` -- to eat 
+- **food**: `string` -- to eat
 
-- **drink**: `string` -- to drink 
+- **drink**: `string` -- to drink
 
 
 #### Return Type: `void` 
+<br/>
 
----
-### Function: `sleep`
+<br/>
 
-posibility to sleep in `hours`
+### Function: `sleep(hours: number)`
+
+    posibility to sleep in `hours`
 
 #### Parameter List:
 
-- **hours**: `number` -- to sleep 
+- **hours**: `number` -- to sleep
 
 
 #### Return Type: `void` 

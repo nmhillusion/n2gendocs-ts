@@ -16,7 +16,7 @@ export function interfaceGenerateDocs(interfNode: TsInterfaceModel) {
     },
     {
       varName: "commentsOfInterface",
-      varValue: commentGenerateDocs(interfNode.comments).content,
+      varValue: `    ${commentGenerateDocs(interfNode.comments).content}`,
     },
     {
       varName: "propertyListContent",
@@ -33,7 +33,7 @@ export function interfaceGenerateDocs(interfNode: TsInterfaceModel) {
         0 < interfNode.methodList.length
           ? interfNode.methodList
               .map((method) => functionGenerateDocs(method, true))
-              .join("\n---\n")
+              .join("<br/>\n\n".repeat(2))
           : "`None`",
     },
   ]);
