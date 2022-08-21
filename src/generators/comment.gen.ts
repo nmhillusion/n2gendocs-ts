@@ -1,4 +1,4 @@
-import { TsCommentModel } from "@nmhillusion/n2mix/dist/javascript/modules/parser/typescript";
+import { TsCommentModel } from "@nmhillusion/n2mix/parser/typescript";
 import { CommentDocsModel } from "@root/models/comment.docs.model";
 
 export function commentGenerateDocs(

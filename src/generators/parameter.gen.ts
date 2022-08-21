@@ -1,7 +1,7 @@
 import {
   TsParamModel,
   TsPropertyModel,
-} from "@nmhillusion/n2mix/dist/javascript/modules/parser/typescript";
+} from "@nmhillusion/n2mix/parser/typescript";
 import { resolveVariablesTemplate } from "@root/modules/resolveVariableTemplate.mod";
 import { obtainTemplateMod } from "@root/modules/obtainTemplate.mod";
 import { TemplateType } from "@root/modules/Template.type";

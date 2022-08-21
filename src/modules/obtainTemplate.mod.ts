@@ -1,4 +1,4 @@
-import { file } from "@nmhillusion/n2mix";
+import { CommonUtil } from "@nmhillusion/n2mix/file/common.util";
 import * as fs from "fs";
 import path from "path";
 import { TemplateType } from "./Template.type";
@@ -12,7 +12,7 @@ export function obtainTemplateMod(templateType: TemplateType): string {
 
   const templateFilePath = path.join(__dirname, templateType);
 
-  if (file.CommonUtil.isFile(templateFilePath)) {
+  if (CommonUtil.isFile(templateFilePath)) {
     const templateContent = fs.readFileSync(templateFilePath).toString();
 
     TEMPLATE_CACHE[templateType] = templateContent;

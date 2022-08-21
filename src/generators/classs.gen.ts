@@ -1,4 +1,4 @@
-import { TsClassModel } from "@nmhillusion/n2mix/dist/javascript/modules/parser/typescript";
+import { TsClassModel } from "@nmhillusion/n2mix/parser/typescript/model";
 import { Constant } from "@root/modules/Contant.enum";
 import { obtainTemplateMod } from "@root/modules/obtainTemplate.mod";
 import { resolveVariablesTemplate } from "@root/modules/resolveVariableTemplate.mod";

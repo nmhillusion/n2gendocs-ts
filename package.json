@@ -16,7 +16,7 @@
   "author": "nmhillusion",
   "license": "MIT",
   "dependencies": {
-    "@nmhillusion/n2mix": "^2022.0.5",
+    "@nmhillusion/n2mix": "^2022.0.7",
     "path": "^0.12.7"
   },
   "devDependencies": {

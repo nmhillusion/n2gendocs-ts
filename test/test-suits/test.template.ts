@@ -1,7 +1,7 @@
-import { util } from "@nmhillusion/n2mix";
 import { DocsGenerator } from "@root/generators/generator";
 import * as path from "path";
 import * as fs from "fs";
+import { stringToNormalLines } from "@nmhillusion/n2mix/utils/text.util";
 
 export function fromTestTemplate(fileNameToTest: string) {
   makeSureExistTestOutputFolder();
@@ -23,8 +23,8 @@ export function fromTestTemplate(fileNameToTest: string) {
         docsOutput
       );
 
-      expect(util.text.stringToNormalLines(docsOutput)).toEqual(
-        util.text.stringToNormalLines(expectedOutput)
+      expect(stringToNormalLines(docsOutput)).toEqual(
+        stringToNormalLines(expectedOutput)
       );
     });
 }
