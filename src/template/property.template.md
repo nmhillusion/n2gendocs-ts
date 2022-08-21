@@ -1,1 +1,1 @@
-- **{{ var(propertyName) }}**: `{{ var(propertyType) }}` {{ var(commentsOfProperty) }} {{ var(optional) }}
+- **{{ var(propertyName) }}**: `{{ var(propertyType) }}` {{ var(optional) }}{{ var(commentsOfProperty) }}

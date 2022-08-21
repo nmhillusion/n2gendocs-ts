@@ -27,7 +27,7 @@ export function functionGenerateDocs(
     { varName: "functionName", varValue: funcNode.functionName },
     {
       varName: "commentsOfFunction",
-      varValue: commentContent,
+      varValue: `    ${commentContent}`,
     },
     {
       varName: "parameterListContent",

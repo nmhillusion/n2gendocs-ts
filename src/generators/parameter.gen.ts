@@ -17,7 +17,7 @@ export function parameterPropertyGenerateDocs(
   const commentsOfProperty: string = `-- ${
     commentGenerateDocs(propNode.comments).content
   }`;
-  const optional: string = propNode.optional ? "(optional)" : "";
+  const optional: string = propNode.optional ? "_(optional)_ " : "";
 
   const renderedContent = resolveVariablesTemplate(templateContent, [
     { varName: "propertyName", varValue: propertyName },

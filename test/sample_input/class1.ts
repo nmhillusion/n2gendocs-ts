@@ -28,7 +28,8 @@ export class Class1 {
    * @param position to locate
    * @returns locate to position and show it
    */
-  method4({ x, y }: { x: number; y: number }) {
+  method4(position: { x: number; y: number }) {
+    const { x, y } = position;
     return `Position is (${x}, ${y})`;
   }
 }
