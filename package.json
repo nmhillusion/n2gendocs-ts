@@ -2,9 +2,14 @@
   "name": "n2gendocs-ts",
   "version": "0.0.1",
   "description": "Tool to generate docs for typescript from typescript file",
-  "main": "index.js",
+  "main": "./dist/generators/generator.js",
+  "types": "./dist/generators/generator.d.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc && ts-node ./support/build-publish-package-json.ts"
   },
   "keywords": [
     "nmhillusion",
@@ -16,7 +21,7 @@
   "author": "nmhillusion",
   "license": "MIT",
   "dependencies": {
-    "@nmhillusion/n2mix": "^2022.0.7",
+    "@nmhillusion/n2mix": "^2022.0.9",
     "path": "^0.12.7"
   },
   "devDependencies": {
