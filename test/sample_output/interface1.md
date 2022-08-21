@@ -6,6 +6,9 @@
 
 `None`
 
+<br/>
+<br/>
+
 ## Method List
 
 ### Function: `talk(message: string)`
@@ -18,8 +21,8 @@
 
 
 #### Return Type: `void` 
-<br/>
 
+<br/>
 <br/>
 
 ### Function: `eat(food: string, drink: string)`
@@ -34,8 +37,8 @@
 
 
 #### Return Type: `void` 
-<br/>
 
+<br/>
 <br/>
 
 ### Function: `sleep(hours: number)`

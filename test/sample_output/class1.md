@@ -2,14 +2,12 @@
 
     
 
-
-
 ## Properties
 
 `None`
 
-
-
+<br/>
+<br/>
 
 ## Methods
 
@@ -23,8 +21,8 @@
 
 #### Return Type: `Not defined` 
 
-
---
+<br/>
+<br/>
 
 ### Function: `method2(x: number)`
 
@@ -37,8 +35,8 @@
 
 #### Return Type: `Not defined` --- add 1 to x
 
-
---
+<br/>
+<br/>
 
 ### Function: `method3(x: string, extra?: number)`
 
@@ -53,8 +51,8 @@
 
 #### Return Type: `Not defined` --- toString of method
 
-
---
+<br/>
+<br/>
 
 ### Function: `method4(position: { x: number; y: number })`
 
@@ -66,3 +64,4 @@
 
 
 #### Return Type: `Not defined` --- locate to position and show it
+

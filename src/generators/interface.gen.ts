@@ -1,4 +1,5 @@
 import { TsInterfaceModel } from "@nmhillusion/n2mix/dist/javascript/modules/parser/typescript";
+import { Constant } from "@root/modules/Contant.enum";
 import { obtainTemplateMod } from "@root/modules/obtainTemplate.mod";
 import { resolveVariablesTemplate } from "@root/modules/resolveVariableTemplate.mod";
 import { TemplateType } from "@root/modules/Template.type";
@@ -33,7 +34,7 @@ export function interfaceGenerateDocs(interfNode: TsInterfaceModel) {
         0 < interfNode.methodList.length
           ? interfNode.methodList
               .map((method) => functionGenerateDocs(method, true))
-              .join("<br/>\n\n".repeat(2))
+              .join(Constant.SEPERATE_MEMBER)
           : "`None`",
     },
   ]);

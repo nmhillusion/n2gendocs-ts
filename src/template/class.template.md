@@ -2,14 +2,12 @@
 
 {{ var(commentsOfClass) }}
 
-
-
 ## Properties
 
 {{ var(propertyListContent) }}
 
-
-
+<br/>
+<br/>
 
 ## Methods
 

@@ -1,4 +1,5 @@
 import { TsClassModel } from "@nmhillusion/n2mix/dist/javascript/modules/parser/typescript";
+import { Constant } from "@root/modules/Contant.enum";
 import { obtainTemplateMod } from "@root/modules/obtainTemplate.mod";
 import { resolveVariablesTemplate } from "@root/modules/resolveVariableTemplate.mod";
 import { TemplateType } from "@root/modules/Template.type";
@@ -24,14 +25,14 @@ export function classGenerateDocs(classNode: TsClassModel): string {
         0 < classNode.propertyList.length
           ? classNode.propertyList
               .map(parameterPropertyGenerateDocs)
-              .join("\n\n--\n\n")
+              .join(Constant.SEPERATE_MEMBER)
           : "`None`",
     },
     {
       varName: "methodListContent",
       varValue: classNode.methodList
         .map((method) => functionGenerateDocs(method, true))
-        .join("\n\n--\n\n"),
+        .join(Constant.SEPERATE_MEMBER),
     },
   ]);
 
