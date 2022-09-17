@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "test": "jest",
-    "build": "tsc && ts-node ./support/build-publish-package-json.ts"
+    "build": "tsc && ts-node ./support/build-publish-package-json.ts && cp README.md dist"
   },
   "keywords": [
     "nmhillusion",
