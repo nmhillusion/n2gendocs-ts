@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": "..",
     "paths": {
-      "@root/*": ["./src/*"]
+      "@nmhillusion/n2gendocs-ts/*": ["./src/*"]
     }
   }
 }

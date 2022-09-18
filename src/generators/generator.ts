@@ -1,5 +1,5 @@
 import { TsFileModel, TsParser } from "@nmhillusion/n2mix/parser/typescript";
-import { Constant } from "@root/modules/Contant.enum";
+import { Constant } from "@nmhillusion/n2gendocs-ts/modules/Contant.enum";
 import { PathLike } from "fs";
 import { classGenerateDocs } from "./classs.gen";
 import { exportGenerateDocs } from "./export.gen";

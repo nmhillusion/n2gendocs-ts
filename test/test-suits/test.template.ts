@@ -1,4 +1,4 @@
-import { DocsGenerator } from "@root/generators/generator";
+import { DocsGenerator } from "@nmhillusion/n2gendocs-ts/generators/generator";
 import * as path from "path";
 import * as fs from "fs";
 import { stringToNormalLines } from "@nmhillusion/n2mix/utils/text.util";
