@@ -2,9 +2,9 @@ import {
   TsParamModel,
   TsPropertyModel,
 } from "@nmhillusion/n2mix/parser/typescript";
-import { resolveVariablesTemplate } from "@nmhillusion/n2gendocs-ts/modules/resolveVariableTemplate.mod";
-import { obtainTemplateMod } from "@nmhillusion/n2gendocs-ts/modules/obtainTemplate.mod";
-import { TemplateType } from "@nmhillusion/n2gendocs-ts/modules/Template.type";
+import { resolveVariablesTemplate } from "../modules/resolveVariableTemplate.mod";
+import { obtainTemplateMod } from "../modules/obtainTemplate.mod";
+import { TemplateType } from "../modules/Template.type";
 import { commentGenerateDocs } from "./comment.gen";
 
 export function parameterPropertyGenerateDocs(

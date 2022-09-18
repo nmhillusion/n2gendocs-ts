@@ -20,7 +20,8 @@ export function obtainTemplateMod(templateType: TemplateType): string {
     return templateContent;
   } else {
     throw new Error(
-      "Cannot find template resource. Please notify to developer of this package"
+      "Cannot find template resource. Please notify to developer of this package. Path: " +
+        templateFilePath
     );
   }
 }

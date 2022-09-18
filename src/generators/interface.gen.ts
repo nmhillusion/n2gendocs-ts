@@ -1,8 +1,8 @@
 import { TsInterfaceModel } from "@nmhillusion/n2mix/parser/typescript";
-import { Constant } from "@nmhillusion/n2gendocs-ts/modules/Contant.enum";
-import { obtainTemplateMod } from "@nmhillusion/n2gendocs-ts/modules/obtainTemplate.mod";
-import { resolveVariablesTemplate } from "@nmhillusion/n2gendocs-ts/modules/resolveVariableTemplate.mod";
-import { TemplateType } from "@nmhillusion/n2gendocs-ts/modules/Template.type";
+import { Constant } from "../modules/Constant.enum";
+import { obtainTemplateMod } from "../modules/obtainTemplate.mod";
+import { resolveVariablesTemplate } from "../modules/resolveVariableTemplate.mod";
+import { TemplateType } from "../modules/Template.type";
 import { commentGenerateDocs } from "./comment.gen";
 import { functionGenerateDocs } from "./function.gen";
 import { parameterPropertyGenerateDocs } from "./parameter.gen";
