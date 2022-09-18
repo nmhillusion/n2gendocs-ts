@@ -1,12 +1,19 @@
 {
   "name": "@nmhillusion/n2gendocs-ts",
-  "version": "2022.1.1+5",
+  "version": "2022.1.2+6",
   "description": "Tool to generate docs for typescript from typescript file",
   "main": "./dist/generators/generator.js",
   "types": "./dist/generators/generator.d.js",
   "files": [
     "dist"
   ],
+  "browser": {
+    "shelljs": false,
+    "fs": false,
+    "path": false,
+    "os": false,
+    "typescript": false
+  },
   "scripts": {
     "test": "jest",
     "build": "tsc && ts-node ./support/build-publish-package-json.ts && cp README.md dist"
