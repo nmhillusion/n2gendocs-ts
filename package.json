@@ -1,6 +1,6 @@
 {
   "name": "@nmhillusion/n2gendocs-ts",
-  "version": "2022.1.0+4",
+  "version": "2022.1.1+5",
   "description": "Tool to generate docs for typescript from typescript file",
   "main": "./dist/generators/generator.js",
   "types": "./dist/generators/generator.d.js",
