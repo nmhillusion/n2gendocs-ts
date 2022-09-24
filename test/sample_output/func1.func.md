@@ -1,4 +1,4 @@
-# Function: `adder(init: number)`
+# Function: `adder`
 
     adder for number to adding from a constant number
 
@@ -20,7 +20,7 @@
 <br/>
 <br/>
 
-# Function: `multilier(init: number)`
+# Function: `multilier`
 
     multilier for number to multiply from a constant number
 

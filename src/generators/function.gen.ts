@@ -29,8 +29,7 @@ export function functionGenerateDocs(
   const renderedContent = resolveVariablesTemplate(templateContent, [
     {
       varName: "functionName",
-      varValue:
-        funcNode.functionName + generateParameterList(funcNode.paramList),
+      varValue: funcNode.functionName, // + generateParameterList(funcNode.paramList),
     },
     {
       varName: "commentsOfFunction",
@@ -38,9 +37,12 @@ export function functionGenerateDocs(
     },
     {
       varName: "parameterListContent",
-      varValue: funcNode.paramList
-        .map((param) => parameterPropertyGenerateDocs(param))
-        .join("\n"),
+      varValue:
+        funcNode.paramList && funcNode.paramList.length
+          ? funcNode.paramList
+              .map((param) => parameterPropertyGenerateDocs(param))
+              .join("\n")
+          : "`None`",
     },
     { varName: "returnType", varValue: funcNode.returnType || `Not defined` },
     {

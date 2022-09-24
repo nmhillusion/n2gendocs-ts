@@ -11,20 +11,20 @@
 
 ## Methods
 
-### Function: `method1()`
+### Function: `method1`
 
     description of method1
 
 #### Parameter List:
 
-
+`None`
 
 #### Return Type: `Not defined` 
 
 <br/>
 <br/>
 
-### Function: `method2(x: number)`
+### Function: `method2`
 
     description of method2
 
@@ -38,7 +38,7 @@
 <br/>
 <br/>
 
-### Function: `method3(x: string, extra?: number)`
+### Function: `method3`
 
     test method 3
 
@@ -54,7 +54,7 @@
 <br/>
 <br/>
 
-### Function: `method4(position: { x: number; y: number })`
+### Function: `method4`
 
     locate a position
 

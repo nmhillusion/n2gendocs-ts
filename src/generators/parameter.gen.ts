@@ -12,11 +12,13 @@ export function parameterPropertyGenerateDocs(
 ) {
   const templateContent = obtainTemplateMod(TemplateType.PROPERTY_TEMPLATE);
 
+  const propComment = commentGenerateDocs(propNode.comments).content;
+
   const propertyName: string = propNode.name;
   const propertyType: string = propNode.type;
-  const commentsOfProperty: string = `-- ${
-    commentGenerateDocs(propNode.comments).content
-  }`;
+  const commentsOfProperty: string = String(propComment).trim()
+    ? `-- ${propComment}`
+    : "";
   const optional: string = propNode.optional ? "_(optional)_ " : "";
 
   const renderedContent = resolveVariablesTemplate(templateContent, [

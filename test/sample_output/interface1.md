@@ -11,7 +11,7 @@
 
 ## Method List
 
-### Function: `talk(message: string)`
+### Function: `talk`
 
     posibility to talk
 
@@ -25,7 +25,7 @@
 <br/>
 <br/>
 
-### Function: `eat(food: string, drink: string)`
+### Function: `eat`
 
     posibility to eat
 
@@ -41,7 +41,7 @@
 <br/>
 <br/>
 
-### Function: `sleep(hours: number)`
+### Function: `sleep`
 
     posibility to sleep in `hours`
 
