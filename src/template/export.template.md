@@ -1,4 +1,4 @@
-# Entry: `{{ var(exportName) }}`
+# Entry: {{ var(exportName) }}
 
 > Reference to: {{ var(moduleSpecifier) }}
 

@@ -30,7 +30,7 @@
 <br/>
 <br/>
 
-# Entry: `class1`
+# Entry: all exports from - `class1`
 
 > Reference to: [./class1.md](./class1.md)
 

@@ -80,7 +80,7 @@ function buildModuleSpecifier(exportNode: TsExportModel) {
 
 function buildExportName(exportNode: TsExportModel): string {
   if (exportNode.exportName) {
-    return exportNode.exportName;
+    return `\`${exportNode.exportName}\``;
   }
 
   const unescapeModuleSpecifier = exportNode.moduleSpecifier?.replace(
@@ -89,8 +89,8 @@ function buildExportName(exportNode: TsExportModel): string {
   );
 
   if (!unescapeModuleSpecifier) {
-    return unescapeModuleSpecifier;
+    return `\`${unescapeModuleSpecifier}\``;
   }
 
-  return path.basename(unescapeModuleSpecifier);
+  return `all exports from - \`${path.basename(unescapeModuleSpecifier)}\``;
 }
