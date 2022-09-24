@@ -30,10 +30,14 @@ export function exportGenerateDocs(exportNode: TsExportModel): string {
 }
 
 function buildModuleSpecifier(exportNode: TsExportModel) {
-  const unescapeModuleSpecifier = exportNode.moduleSpecifier.replace(
+  const unescapeModuleSpecifier = exportNode.moduleSpecifier?.replace(
     /'|"/g,
     ""
   );
+
+  if (!unescapeModuleSpecifier) {
+    return unescapeModuleSpecifier;
+  }
 
   const expectFolderPath = path.join(
     path.dirname(exportNode.filePath),
