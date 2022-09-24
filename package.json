@@ -1,7 +1,7 @@
 {
   "type": "commonjs",
   "name": "@nmhillusion/n2gendocs-ts",
-  "version": "2022.1.3+7",
+  "version": "2022.0.1+8",
   "description": "Tool to generate docs for typescript from typescript file",
   "main": "./dist/generators/generator.js",
   "types": "./dist/generators/generator.d.js",
@@ -28,7 +28,7 @@
   "author": "nmhillusion",
   "license": "MIT",
   "dependencies": {
-    "@nmhillusion/n2mix": "^2022.0.9",
+    "@nmhillusion/n2mix": "^2022.0.12",
     "path": "^0.12.7"
   },
   "devDependencies": {

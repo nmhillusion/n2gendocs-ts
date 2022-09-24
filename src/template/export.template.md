@@ -1,5 +1,5 @@
 # Entry: `{{ var(exportName) }}`
 
-> Reference to: `{{ var(moduleSpecifier) }}`
+> Reference to: {{ var(moduleSpecifier) }}
 
 {{ var(commentsOfExport) }}
