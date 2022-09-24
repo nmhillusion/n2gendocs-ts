@@ -14,7 +14,7 @@ export function exportGenerateDocs(exportNode: TsExportModel): string {
   const renderedContent = resolveVariablesTemplate(templateContent, [
     {
       varName: "exportName",
-      varValue: exportNode.exportName,
+      varValue: buildExportName(exportNode),
     },
     {
       varName: "moduleSpecifier",
@@ -76,4 +76,21 @@ function buildModuleSpecifier(exportNode: TsExportModel) {
   } else {
     return `\`${unescapeModuleSpecifier}\``;
   }
+}
+
+function buildExportName(exportNode: TsExportModel): string {
+  if (exportNode.exportName) {
+    return exportNode.exportName;
+  }
+
+  const unescapeModuleSpecifier = exportNode.moduleSpecifier?.replace(
+    /'|"/g,
+    ""
+  );
+
+  if (!unescapeModuleSpecifier) {
+    return unescapeModuleSpecifier;
+  }
+
+  return path.basename(unescapeModuleSpecifier);
 }

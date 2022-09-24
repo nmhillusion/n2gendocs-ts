@@ -19,3 +19,19 @@
 > Reference to: [./interface1.md](./interface1.md)
 
     interf1 is interface for type 1
+<br/>
+<br/>
+
+
+
+---
+
+
+<br/>
+<br/>
+
+# Entry: `class1`
+
+> Reference to: [./class1.md](./class1.md)
+
+    export all things from class1
