@@ -1,6 +1,6 @@
 # Entry: `fn1`
 
-> Reference to: [./func1.md](./func1.md)
+> Reference to: [./func1.func.md](./func1.func.md)
 
     fn1 is a function to execute feature 1
 <br/>

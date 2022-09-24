@@ -49,6 +49,12 @@ function buildModuleSpecifier(exportNode: TsExportModel) {
       ? exportNode.moduleSpecifier
       : unescapeModuleSpecifier + ".ts"
   );
+  const expectJsFilePath = path.join(
+    path.dirname(exportNode.filePath),
+    exportNode.moduleSpecifier.endsWith(".js")
+      ? exportNode.moduleSpecifier
+      : unescapeModuleSpecifier + ".js"
+  );
 
   console.log({ expectFolderPath, expectMdFilePath: expectTsFilePath });
 
@@ -60,6 +66,11 @@ function buildModuleSpecifier(exportNode: TsExportModel) {
   } else if (
     existsSync(expectTsFilePath) &&
     lstatSync(expectTsFilePath).isFile()
+  ) {
+    return `[${unescapeModuleSpecifier}.md](${unescapeModuleSpecifier}.md)`;
+  } else if (
+    existsSync(expectJsFilePath) &&
+    lstatSync(expectJsFilePath).isFile()
   ) {
     return `[${unescapeModuleSpecifier}.md](${unescapeModuleSpecifier}.md)`;
   } else {

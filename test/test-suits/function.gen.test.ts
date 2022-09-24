@@ -1,3 +1,3 @@
 import { fromTestTemplate } from "./test.template";
 
-fromTestTemplate("func1")("test class docs generator");
+fromTestTemplate("func1.func")("test class docs generator");
