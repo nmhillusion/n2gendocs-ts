@@ -1,6 +1,6 @@
 # Entry: `fn1`
 
-> Reference to: `"./func1"`
+> Reference to: [./func1.md](./func1.md)
 
     fn1 is a function to execute feature 1
 <br/>
@@ -16,6 +16,6 @@
 
 # Entry: `interf1`
 
-> Reference to: `"./interface1"`
+> Reference to: [./interface1.md](./interface1.md)
 
     interf1 is interface for type 1
